@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body style="margin:0; font-family:'Poppins', sans-serif; background-color:#fafafa; display:flex; flex-direction:column; min-height:100vh;">
+<body style="
+  margin:0; 
+  font-family:'Poppins', sans-serif; 
+  background-image: url('../imagenes/fondoIS.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display:flex; 
+  flex-direction:column; 
+  min-height:100vh;">
 
   <header style="background-color:#f5f5f5; padding:10px 0; border-bottom:1px solid #ccc;">
     <div style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 40px;">

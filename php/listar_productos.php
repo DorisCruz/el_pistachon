@@ -32,39 +32,81 @@ $result = $conn->query("SELECT * FROM productos ORDER BY id DESC");
   <title>Administrador | Listar Productos</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background: #3eb43a;
-      color: #fff;
-    }
-    .acciones a {
-      margin: 0 5px;
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      color: #fff;
-    }
-    .editar { background: #007bff; }
-    .eliminar { background: #dc3545; }
-    .alert {
-      padding: 12px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-    .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-  </style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background: #3eb43a;
+    color: #fff;
+  }
+
+  /* Nueva versión mejorada */
+  .acciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* separación entre botones */
+  }
+
+  .acciones a {
+    display: inline-block;
+    width: 90px;           /* mismo ancho */
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .editar {
+    background: #3363a2ff;
+  }
+
+  .editar:hover {
+    background: #3363a2ff;
+    transform: scale(1.05);
+  }
+
+  .eliminar {
+    background: #dc3545;
+  }
+
+  .eliminar:hover {
+    background: #c82333;
+    transform: scale(1.05);
+  }
+
+  .alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  .error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+</style>
+
 </head>
 <body>
 
