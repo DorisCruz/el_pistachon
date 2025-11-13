@@ -26,6 +26,9 @@ $totalStock = $conn->query("SELECT SUM(stock) AS total FROM productos")->fetch_a
       gap: 20px;
       margin-top: 40px;
     }
+    header {
+      padding: 50px;
+    }
     .card {
       background: #fff;
       border-radius: 12px;
@@ -48,14 +51,14 @@ $totalStock = $conn->query("SELECT SUM(stock) AS total FROM productos")->fetch_a
 
 <header class="header">
   <div class="menu container">
-    <a href="admin.php" class="logo">Panel Admin</a>
-    <nav class="navbar">
+     <nav class="navbar">
       <ul>
         <li><a href="agregar_producto.php">Agregar Producto</a></li>
         <li><a href="listar_productos.php">Gestionar Productos</a></li>
         <li><a href="logout.php">Cerrar sesión</a></li>
       </ul>
     </nav>
+    <a href="admin.php" class="logo">Panel Admin</a>
   </div>
 </header>
 

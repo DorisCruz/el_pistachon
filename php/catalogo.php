@@ -87,7 +87,7 @@ $result = $stmt->get_result();
       </select>
       <input type="text" name="buscar" placeholder="Buscar producto..." class="search-input">
       <button type="submit" class="search-button">
-        <img src="../imagenes/quelepasaalupita.jpg" alt="Buscar" class="lupa-icono">
+        <img src="../imagenes/search.png" alt="Buscar" class="lupa-icono">
       </button>
     </form>
   </div>
